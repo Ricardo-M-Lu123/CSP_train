@@ -15,7 +15,7 @@ while (len(children) > 1):
             remove_children.append(children[i])
     for i in range(len(remove_children)):
         children.remove(remove_children[i])
-        if len(children) == 1:  # 如果提前就只剩下一个小朋友了，就直接退出。以防k=6，剩下12和16都被删掉的情况
+        if len(children) == 1:  # 如果提前就只剩下一个小朋友了，就直接退出。以防k=1，剩下10和11都被删掉的情况
             break
     remove_children = []
 print(children[0])
